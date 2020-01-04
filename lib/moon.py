@@ -4,10 +4,10 @@ def moon_phase(year, month, day):
 	
 	#учет на случай високосного года
 	if month < 3:
-		--year
+		year += 1
 		month += 12
 		
-	++month
+	month += 1
 	
 	#число дней за прошедшие годы
 	c = 365.25 * year
@@ -35,3 +35,4 @@ def moon_phase(year, month, day):
                 7: 'Старая луна'
 	}
 	return phase_list[b]
+

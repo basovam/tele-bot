@@ -4,7 +4,7 @@ def moon_phase(year, month, day):
 	
 	#учет на случай високосного года
 	if month < 3:
-		year += 1
+		year -= 1
 		month += 12
 		
 	month += 1
